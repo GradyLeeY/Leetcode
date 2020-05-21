@@ -12,9 +12,9 @@ import java.util.Map;
 public class Intersect {
 
     public static void main(String[] args) {
-        int[] nums1 = {1,2,2,1};
-        int[] nums2 = {2,2};
-        int[] ints = solution2(nums1, nums2);
+        int[] nums1 = {4,9,5};
+        int[] nums2 = {9,4,9,8,4};
+        int[] ints = solution1(nums1, nums2);
         for (int i:ints
              ) {
             System.out.println(i);
@@ -38,13 +38,13 @@ public class Intersect {
         while (i < nums1.length && j<nums2.length){
             if (nums1[i] < nums2[j]){
                 i++;
-            }else if (nums1[i]<nums2[j]){
+            }else if (nums1[i]>nums2[j]){
                 j++;
             }else {
                 nums1[k] = nums1[i];
                 k++;
                 i++;
-                j++;
+                ++j;
             }
         }
         return Arrays.copyOfRange(nums1,0,k);
