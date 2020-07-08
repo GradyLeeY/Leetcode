@@ -21,7 +21,7 @@ public class HasPathSum {
     }
 
     /**
-     * 广度有限搜索
+     * 广度优先搜索
      * 使用两个队列分别储存即将遍历的节点，以及根节点到这些节点的路径和
      * @param root
      * @param sum
