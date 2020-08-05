@@ -8,7 +8,7 @@ public class IntegerCount {
 
     public static void main(String[] args) {
         IntegerCount integerBreak = new IntegerCount();
-        System.out.println(integerBreak.solution(4));
+        System.out.println(integerBreak.solution(5));
     }
     private int solution(int n){
         int result = 0;
