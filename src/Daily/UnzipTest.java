@@ -17,7 +17,7 @@ public class UnzipTest {
     public static void main(String[] args) throws IOException {
 
         //获取文件输入流
-        FileInputStream input = new FileInputStream("C:\\Users\\admin\\Desktop\\导入.zip");
+        FileInputStream input = new FileInputStream("C:\\Users\\admin\\Desktop\\test.zip");
 
         //获取ZIP输入流(一定要指定字符集Charset.forName("GBK")否则会报java.lang.IllegalArgumentException: MALFORMED)
         ZipInputStream zipInputStream = new ZipInputStream(new BufferedInputStream(input), Charset.forName("GBK"));
